@@ -28,9 +28,9 @@ zk-agent
 	```
 2. zookeeper节点值
 	```
-		{
-		    "ip": "10.66.241.12",
-		    "origin": "myservice",
-		    "isOnline": true
-		}
+	{
+	    "ip": "10.66.241.12",
+	    "origin": "myservice",
+	    "isOnline": true
+	}
 	```

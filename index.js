@@ -53,7 +53,7 @@ async function live(config) {
         origin: srvName,
         isOnline: false
     };
-    let bufData = new Buffer(JSON.stringify(data));
+    let bufData = Buffer.from(JSON.stringify(data));
     let tempNodePath = await zkClient.createAsync(nodepath, bufData, CreateMode.EPHEMERAL_SEQUENTIAL); //临时有序节点
     logger.info('created node', tempNodePath);
 
